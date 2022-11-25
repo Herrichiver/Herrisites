@@ -1,0 +1,45 @@
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    font-family: "times";
+    font-weight: bold;}
+
+body {
+  text-align: center;
+          margin: 0;
+          font-family: "Lato", sans-serif;
+          background-color: #0047ab;}
+        nav{
+          font-weight: bold;
+        background-color: #333;
+        padding:20px;
+        text-align:center;
+        width:100%;
+        position:sticky;
+        top: 0px;}
+        nav a{
+          font-family: 'Times New Roman', Times, serif;
+        color:white;
+        text-align:center;
+        padding: 20px 20px;
+        text-decoration: none;
+        text-text-decoration: none;}
+        nav a:hover{
+        background-color:#0047ab;}
+        @media(prefers=reduced-motion:no-preference){
+        html{scroll-behavior:smooth;}}
+
+.active {
+  background-color: #0047ab;}
+
+aside {
+  float: right;
+  border-style: solid;
+  border-radius: 20%;
+}
+.news {
+background-color: ghostwhite;}
+.newsText {
+  font-family: 'Times New Roman', 'Times', 'serif';
+  font-weight: bolder;
+  border-color: #333;
+}
