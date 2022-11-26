@@ -1,3 +1,4 @@
 # Herrisites
-# Currently messing around trying to make a website
-# Bottom text
+Currently messing around trying to make a website
+
+Bottom text
