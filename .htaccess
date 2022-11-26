@@ -1,9 +1,22 @@
+//Rewrite to www
+Options +FollowSymLinks
 RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://herrichiver.github.io[nc]
+RewriteRule ^(.*)$ http://www.https://herrichiver.github.io/$1 [r=301,nc]
 
+//Caching schema
+<FilesMatch "\.(jpg|png)$">
+Header set Cache-Control "private, max-age=1200"
+</FilesMatch>
+
+//Change default directory page
+DirectoryIndex home.html
+
+//Prevent directory listings
+Options All -Indexes
+ 
+RewriteEngine on
 RewriteCond %{THE_REQUEST} /([^.]+).html [NC]
-
 RewriteRule ^ /%1 [NC,L,R]
-
 RewriteCond %{REQUEST_FILENAME}.html -f
-
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
