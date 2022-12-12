@@ -2,7 +2,7 @@
 Options +FollowSymLinks
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^https://herrichiver.github.io[nc]
-RewriteRule ^(.*)$ http://www.https://herrichiver.github.io/$1 [r=301,nc]
+RewriteRule ^(.*)$ https://herrichiver.github.io/$1 [r=301,nc]
 
 //Caching schema
 <FilesMatch "\.(jpg|png)$">
